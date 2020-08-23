@@ -1,4 +1,5 @@
 import { EntityRepository, Repository } from 'typeorm';
+import Category  from '../models/Category'
 
 import Transaction from '../models/Transaction';
 
