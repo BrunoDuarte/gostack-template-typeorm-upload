@@ -1,4 +1,4 @@
-import {MigrationInterface, QueryRunner, Table} from "typeorm";
+import {MigrationInterface, QueryRunner, Table, TableForeignKey} from "typeorm";
 import { uuid } from 'uuidv4'
 
 export class CreateTransactionsTable1598117449281 implements MigrationInterface {
@@ -18,23 +18,17 @@ export class CreateTransactionsTable1598117449281 implements MigrationInterface 
                     {
                         name: 'title', 
                         type: 'varchar',
-                        isNullable: false
-                    },
-                    {
-                        name: 'value', 
-                        type: 'int',
-                        isNullable: false
                     },
                     {
                         name: 'type',
                         type: 'varchar',
-                        isNullable: false
-                    }, 
+                    },
                     {
-                        name: 'category_id',
-                        type: 'varchar',
-                        isNullable: false
-                    }, 
+                        name: 'value', 
+                        type: 'decimal',
+                        precision: 10,
+                        scale: 2
+                    },
                     {
                         name: 'created_at',
                         type: 'timestamp',

@@ -5,7 +5,6 @@ import Transaction from '../models/Transaction';
 import TransactionRepository from '../repositories/TransactionsRepository'
 
 import Category from '../models/Category'
-import CategoriesRepository from '../repositories/CategoriesRepository'
 
 interface RequestDTO {
   title: string
@@ -18,7 +17,7 @@ class CreateTransactionService {
 
   public async execute({title, value, type, category_id}: RequestDTO): Promise<Transaction> {
     const transactionRepository = getCustomRepository(TransactionRepository)
-    const categoryRepository = getCustomRepository(CategoriesRepository)
+    const categoryRepository = getRepository(Category)
 
     const findCategory = await categoryRepository.findOne({where: {title: category_id}})
 
@@ -32,13 +31,11 @@ class CreateTransactionService {
 
     const findCategory2 = await categoryRepository.findOne({where: {title: category_id}})
 
-    console.log(findCategory2)
-
     const transaction = transactionRepository.create({
       title, 
       value, 
       type, 
-      category_id: findCategory2.id
+      category_id: findCategory2?.id
     })
 
     await transactionRepository.save(transaction)

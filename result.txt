@@ -1,0 +1,317 @@
+yarn run v1.22.4
+$ cross-env NODE_ENV=test jest
+  console.error src/app.ts:26
+    QueryFailedError: null value in column "title" violates not-null constraint
+        at new QueryFailedError (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/src/error/QueryFailedError.ts:9:9)
+        at Query.callback (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/src/driver/postgres/PostgresQueryRunner.ts:178:30)
+        at Query.handleError (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/node_modules/pg/lib/query.js:138:19)
+        at Connection.connectedErrorMessageHandler (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/node_modules/pg/lib/client.js:223:17)
+        at Connection.emit (events.js:223:5)
+        at Socket.<anonymous> (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/node_modules/pg/lib/connection.js:120:12)
+        at Socket.emit (events.js:223:5)
+        at addChunk (_stream_readable.js:309:12)
+        at readableAddChunk (_stream_readable.js:290:11)
+        at Socket.Readable.push (_stream_readable.js:224:10) {
+      message: 'null value in column "title" violates not-null constraint',
+      name: 'QueryFailedError',
+      length: 271,
+      severity: 'ERROR',
+      code: '23502',
+      detail: 'Failing row contains (f28af894-66d8-4957-8be2-a00ea06cf417, null, 2020-08-26 17:12:20.019694, 2020-08-26 17:12:20.019694).',
+      hint: undefined,
+      position: undefined,
+      internalPosition: undefined,
+      internalQuery: undefined,
+      where: undefined,
+      schema: 'public',
+      table: 'categories',
+      column: 'title',
+      dataType: undefined,
+      constraint: undefined,
+      file: 'execMain.c',
+      line: '1974',
+      routine: 'ExecConstraints',
+      query: 'INSERT INTO "categories"("id", "title", "created_at", "updated_at") VALUES (DEFAULT, DEFAULT, DEFAULT, DEFAULT) RETURNING "id", "created_at", "updated_at"',
+      parameters: []
+    }
+
+  console.error src/app.ts:26
+    QueryFailedError: null value in column "title" violates not-null constraint
+        at new QueryFailedError (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/src/error/QueryFailedError.ts:9:9)
+        at Query.callback (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/src/driver/postgres/PostgresQueryRunner.ts:178:30)
+        at Query.handleError (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/node_modules/pg/lib/query.js:138:19)
+        at Connection.connectedErrorMessageHandler (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/node_modules/pg/lib/client.js:223:17)
+        at Connection.emit (events.js:223:5)
+        at Socket.<anonymous> (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/node_modules/pg/lib/connection.js:120:12)
+        at Socket.emit (events.js:223:5)
+        at addChunk (_stream_readable.js:309:12)
+        at readableAddChunk (_stream_readable.js:290:11)
+        at Socket.Readable.push (_stream_readable.js:224:10) {
+      message: 'null value in column "title" violates not-null constraint',
+      name: 'QueryFailedError',
+      length: 271,
+      severity: 'ERROR',
+      code: '23502',
+      detail: 'Failing row contains (d43bdf29-0be6-4400-b3e3-00a7ad682a11, null, 2020-08-26 17:12:20.092218, 2020-08-26 17:12:20.092218).',
+      hint: undefined,
+      position: undefined,
+      internalPosition: undefined,
+      internalQuery: undefined,
+      where: undefined,
+      schema: 'public',
+      table: 'categories',
+      column: 'title',
+      dataType: undefined,
+      constraint: undefined,
+      file: 'execMain.c',
+      line: '1974',
+      routine: 'ExecConstraints',
+      query: 'INSERT INTO "categories"("id", "title", "created_at", "updated_at") VALUES (DEFAULT, DEFAULT, DEFAULT, DEFAULT) RETURNING "id", "created_at", "updated_at"',
+      parameters: []
+    }
+
+  console.error src/app.ts:26
+    QueryFailedError: null value in column "title" violates not-null constraint
+        at new QueryFailedError (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/src/error/QueryFailedError.ts:9:9)
+        at Query.callback (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/src/driver/postgres/PostgresQueryRunner.ts:178:30)
+        at Query.handleError (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/node_modules/pg/lib/query.js:138:19)
+        at Connection.connectedErrorMessageHandler (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/node_modules/pg/lib/client.js:223:17)
+        at Connection.emit (events.js:223:5)
+        at Socket.<anonymous> (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/node_modules/pg/lib/connection.js:120:12)
+        at Socket.emit (events.js:223:5)
+        at addChunk (_stream_readable.js:309:12)
+        at readableAddChunk (_stream_readable.js:290:11)
+        at Socket.Readable.push (_stream_readable.js:224:10) {
+      message: 'null value in column "title" violates not-null constraint',
+      name: 'QueryFailedError',
+      length: 271,
+      severity: 'ERROR',
+      code: '23502',
+      detail: 'Failing row contains (3c286323-0636-4530-b501-b58d4ed8e31e, null, 2020-08-26 17:12:20.099113, 2020-08-26 17:12:20.099113).',
+      hint: undefined,
+      position: undefined,
+      internalPosition: undefined,
+      internalQuery: undefined,
+      where: undefined,
+      schema: 'public',
+      table: 'categories',
+      column: 'title',
+      dataType: undefined,
+      constraint: undefined,
+      file: 'execMain.c',
+      line: '1974',
+      routine: 'ExecConstraints',
+      query: 'INSERT INTO "categories"("id", "title", "created_at", "updated_at") VALUES (DEFAULT, DEFAULT, DEFAULT, DEFAULT) RETURNING "id", "created_at", "updated_at"',
+      parameters: []
+    }
+
+  console.error src/app.ts:26
+    QueryFailedError: null value in column "title" violates not-null constraint
+        at new QueryFailedError (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/src/error/QueryFailedError.ts:9:9)
+        at Query.callback (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/src/driver/postgres/PostgresQueryRunner.ts:178:30)
+        at Query.handleError (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/node_modules/pg/lib/query.js:138:19)
+        at Connection.connectedErrorMessageHandler (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/node_modules/pg/lib/client.js:223:17)
+        at Connection.emit (events.js:223:5)
+        at Socket.<anonymous> (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/node_modules/pg/lib/connection.js:120:12)
+        at Socket.emit (events.js:223:5)
+        at addChunk (_stream_readable.js:309:12)
+        at readableAddChunk (_stream_readable.js:290:11)
+        at Socket.Readable.push (_stream_readable.js:224:10) {
+      message: 'null value in column "title" violates not-null constraint',
+      name: 'QueryFailedError',
+      length: 269,
+      severity: 'ERROR',
+      code: '23502',
+      detail: 'Failing row contains (c81f7725-5988-42c3-9d6c-163210315e13, null, 2020-08-26 17:12:24.99232, 2020-08-26 17:12:24.99232).',
+      hint: undefined,
+      position: undefined,
+      internalPosition: undefined,
+      internalQuery: undefined,
+      where: undefined,
+      schema: 'public',
+      table: 'categories',
+      column: 'title',
+      dataType: undefined,
+      constraint: undefined,
+      file: 'execMain.c',
+      line: '1974',
+      routine: 'ExecConstraints',
+      query: 'INSERT INTO "categories"("id", "title", "created_at", "updated_at") VALUES (DEFAULT, DEFAULT, DEFAULT, DEFAULT) RETURNING "id", "created_at", "updated_at"',
+      parameters: []
+    }
+
+  console.error src/app.ts:26
+    QueryFailedError: null value in column "title" violates not-null constraint
+        at new QueryFailedError (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/src/error/QueryFailedError.ts:9:9)
+        at Query.callback (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/src/driver/postgres/PostgresQueryRunner.ts:178:30)
+        at Query.handleError (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/node_modules/pg/lib/query.js:138:19)
+        at Connection.connectedErrorMessageHandler (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/node_modules/pg/lib/client.js:223:17)
+        at Connection.emit (events.js:223:5)
+        at Socket.<anonymous> (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/node_modules/pg/lib/connection.js:120:12)
+        at Socket.emit (events.js:223:5)
+        at addChunk (_stream_readable.js:309:12)
+        at readableAddChunk (_stream_readable.js:290:11)
+        at Socket.Readable.push (_stream_readable.js:224:10) {
+      message: 'null value in column "title" violates not-null constraint',
+      name: 'QueryFailedError',
+      length: 271,
+      severity: 'ERROR',
+      code: '23502',
+      detail: 'Failing row contains (12f68557-e045-4c39-9d66-fa5aabfc9273, null, 2020-08-26 17:12:25.006394, 2020-08-26 17:12:25.006394).',
+      hint: undefined,
+      position: undefined,
+      internalPosition: undefined,
+      internalQuery: undefined,
+      where: undefined,
+      schema: 'public',
+      table: 'categories',
+      column: 'title',
+      dataType: undefined,
+      constraint: undefined,
+      file: 'execMain.c',
+      line: '1974',
+      routine: 'ExecConstraints',
+      query: 'INSERT INTO "categories"("id", "title", "created_at", "updated_at") VALUES (DEFAULT, DEFAULT, DEFAULT, DEFAULT) RETURNING "id", "created_at", "updated_at"',
+      parameters: []
+    }
+
+  console.error src/app.ts:26
+    QueryFailedError: null value in column "title" violates not-null constraint
+        at new QueryFailedError (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/src/error/QueryFailedError.ts:9:9)
+        at Query.callback (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/src/driver/postgres/PostgresQueryRunner.ts:178:30)
+        at Query.handleError (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/node_modules/pg/lib/query.js:138:19)
+        at Connection.connectedErrorMessageHandler (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/node_modules/pg/lib/client.js:223:17)
+        at Connection.emit (events.js:223:5)
+        at Socket.<anonymous> (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/node_modules/pg/lib/connection.js:120:12)
+        at Socket.emit (events.js:223:5)
+        at addChunk (_stream_readable.js:309:12)
+        at readableAddChunk (_stream_readable.js:290:11)
+        at Socket.Readable.push (_stream_readable.js:224:10) {
+      message: 'null value in column "title" violates not-null constraint',
+      name: 'QueryFailedError',
+      length: 271,
+      severity: 'ERROR',
+      code: '23502',
+      detail: 'Failing row contains (a3c0ad78-35c3-4192-a6c1-92478b3cd798, null, 2020-08-26 17:12:25.020705, 2020-08-26 17:12:25.020705).',
+      hint: undefined,
+      position: undefined,
+      internalPosition: undefined,
+      internalQuery: undefined,
+      where: undefined,
+      schema: 'public',
+      table: 'categories',
+      column: 'title',
+      dataType: undefined,
+      constraint: undefined,
+      file: 'execMain.c',
+      line: '1974',
+      routine: 'ExecConstraints',
+      query: 'INSERT INTO "categories"("id", "title", "created_at", "updated_at") VALUES (DEFAULT, DEFAULT, DEFAULT, DEFAULT) RETURNING "id", "created_at", "updated_at"',
+      parameters: []
+    }
+
+  console.error src/app.ts:26
+    QueryFailedError: null value in column "title" violates not-null constraint
+        at new QueryFailedError (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/src/error/QueryFailedError.ts:9:9)
+        at Query.callback (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/src/driver/postgres/PostgresQueryRunner.ts:178:30)
+        at Query.handleError (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/node_modules/pg/lib/query.js:138:19)
+        at Connection.connectedErrorMessageHandler (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/node_modules/pg/lib/client.js:223:17)
+        at Connection.emit (events.js:223:5)
+        at Socket.<anonymous> (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/node_modules/pg/lib/connection.js:120:12)
+        at Socket.emit (events.js:223:5)
+        at addChunk (_stream_readable.js:309:12)
+        at readableAddChunk (_stream_readable.js:290:11)
+        at Socket.Readable.push (_stream_readable.js:224:10) {
+      message: 'null value in column "title" violates not-null constraint',
+      name: 'QueryFailedError',
+      length: 271,
+      severity: 'ERROR',
+      code: '23502',
+      detail: 'Failing row contains (ac0c0a7d-7327-4f51-8921-64ed1f538516, null, 2020-08-26 17:12:25.043773, 2020-08-26 17:12:25.043773).',
+      hint: undefined,
+      position: undefined,
+      internalPosition: undefined,
+      internalQuery: undefined,
+      where: undefined,
+      schema: 'public',
+      table: 'categories',
+      column: 'title',
+      dataType: undefined,
+      constraint: undefined,
+      file: 'execMain.c',
+      line: '1974',
+      routine: 'ExecConstraints',
+      query: 'INSERT INTO "categories"("id", "title", "created_at", "updated_at") VALUES (DEFAULT, DEFAULT, DEFAULT, DEFAULT) RETURNING "id", "created_at", "updated_at"',
+      parameters: []
+    }
+
+  console.error src/app.ts:26
+    QueryFailedError: null value in column "title" violates not-null constraint
+        at new QueryFailedError (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/src/error/QueryFailedError.ts:9:9)
+        at Query.callback (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/src/driver/postgres/PostgresQueryRunner.ts:178:30)
+        at Query.handleError (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/node_modules/pg/lib/query.js:138:19)
+        at Connection.connectedErrorMessageHandler (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/node_modules/pg/lib/client.js:223:17)
+        at Connection.emit (events.js:223:5)
+        at Socket.<anonymous> (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/node_modules/pg/lib/connection.js:120:12)
+        at Socket.emit (events.js:223:5)
+        at addChunk (_stream_readable.js:309:12)
+        at readableAddChunk (_stream_readable.js:290:11)
+        at Socket.Readable.push (_stream_readable.js:224:10) {
+      message: 'null value in column "title" violates not-null constraint',
+      name: 'QueryFailedError',
+      length: 271,
+      severity: 'ERROR',
+      code: '23502',
+      detail: 'Failing row contains (f977f9b1-43f1-4a06-a8a3-794cd614cb2f, null, 2020-08-26 17:12:25.053597, 2020-08-26 17:12:25.053597).',
+      hint: undefined,
+      position: undefined,
+      internalPosition: undefined,
+      internalQuery: undefined,
+      where: undefined,
+      schema: 'public',
+      table: 'categories',
+      column: 'title',
+      dataType: undefined,
+      constraint: undefined,
+      file: 'execMain.c',
+      line: '1974',
+      routine: 'ExecConstraints',
+      query: 'INSERT INTO "categories"("id", "title", "created_at", "updated_at") VALUES (DEFAULT, DEFAULT, DEFAULT, DEFAULT) RETURNING "id", "created_at", "updated_at"',
+      parameters: []
+    }
+
+  console.error src/app.ts:26
+    QueryFailedError: null value in column "title" violates not-null constraint
+        at new QueryFailedError (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/src/error/QueryFailedError.ts:9:9)
+        at Query.callback (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/src/driver/postgres/PostgresQueryRunner.ts:178:30)
+        at Query.handleError (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/node_modules/pg/lib/query.js:138:19)
+        at Connection.connectedErrorMessageHandler (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/node_modules/pg/lib/client.js:223:17)
+        at Connection.emit (events.js:223:5)
+        at Socket.<anonymous> (/home/bruno/Documents/Dev/bootcamp_rocket2/nivel_02/backend/desafio06/gostack-template-typeorm-upload/node_modules/pg/lib/connection.js:120:12)
+        at Socket.emit (events.js:223:5)
+        at addChunk (_stream_readable.js:309:12)
+        at readableAddChunk (_stream_readable.js:290:11)
+        at Socket.Readable.push (_stream_readable.js:224:10) {
+      message: 'null value in column "title" violates not-null constraint',
+      name: 'QueryFailedError',
+      length: 271,
+      severity: 'ERROR',
+      code: '23502',
+      detail: 'Failing row contains (75432188-532e-4725-b108-c44302caa42b, null, 2020-08-26 17:12:25.066018, 2020-08-26 17:12:25.066018).',
+      hint: undefined,
+      position: undefined,
+      internalPosition: undefined,
+      internalQuery: undefined,
+      where: undefined,
+      schema: 'public',
+      table: 'categories',
+      column: 'title',
+      dataType: undefined,
+      constraint: undefined,
+      file: 'execMain.c',
+      line: '1974',
+      routine: 'ExecConstraints',
+      query: 'INSERT INTO "categories"("id", "title", "created_at", "updated_at") VALUES (DEFAULT, DEFAULT, DEFAULT, DEFAULT) RETURNING "id", "created_at", "updated_at"',
+      parameters: []
+    }
+
