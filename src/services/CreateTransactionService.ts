@@ -8,34 +8,40 @@ import Category from '../models/Category'
 
 interface RequestDTO {
   title: string
-  value: number
   type: 'income' | 'outcome'
-  category_id: string
+  value: number
+  category: string
 }
 
 class CreateTransactionService {
 
-  public async execute({title, value, type, category_id}: RequestDTO): Promise<Transaction> {
+  public async execute({title, value, type, category}: RequestDTO): Promise<Transaction> {
     const transactionRepository = getCustomRepository(TransactionRepository)
     const categoryRepository = getRepository(Category)
 
-    const findCategory = await categoryRepository.findOne({where: {title: category_id}})
+    const {total} = await transactionRepository.getBalance()
 
-    if (!findCategory) {
-      const newCategory = categoryRepository.create({
-        title: category_id
+    if (type === 'outcome' && total < value) throw new AppError('You do not have enough balance')
+
+    let transactionCategory = await categoryRepository.findOne({
+      where: {
+        title: category
+      }
+    })
+
+    if(!transactionCategory) {
+      transactionCategory = categoryRepository.create({
+        title: category
       })
 
-      await categoryRepository.save(newCategory)
+      await categoryRepository.save(transactionCategory)
     }
-
-    const findCategory2 = await categoryRepository.findOne({where: {title: category_id}})
-
+    
     const transaction = transactionRepository.create({
       title, 
-      value, 
+      value,
       type, 
-      category_id: findCategory2?.id
+      category: transactionCategory
     })
 
     await transactionRepository.save(transaction)
